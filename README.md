@@ -17,6 +17,7 @@ RabbitCom is a sleek and performant modern **React E-commerce frontend** built w
 - **Lucide React** – Clean and customizable SVG icons
 - **Sonner** – Minimal and beautiful toast notifications
 - **@paypal/react-paypal-js** – Secure PayPal payment integration
+- ** Use context ** for state management 
 
 ### 🧪 Dev Tools
 - **Vite** – Fast build tool
