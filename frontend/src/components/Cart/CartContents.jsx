@@ -1,3 +1,6 @@
+//it used for showing the cart items 
+
+
 import React from 'react';
 import { RiDeleteBin3Line } from 'react-icons/ri';
 import { useCart } from '../../context/CartContext';

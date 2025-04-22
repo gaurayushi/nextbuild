@@ -2,6 +2,15 @@
   import { Link, useNavigate } from 'react-router-dom';
   import { FaUser, FaLock } from 'react-icons/fa';
 
+
+  // ✅ Admin users list
+const adminUsers = [
+  { name: 'Ayushi Gaur', email: 'ayushi' , password: '123' },
+  { name: 'John Admin', email: 'john@admin.com',password: 'admin123' },
+  { name: 'Nihal', email: 'nihal@admin.com', password: 'nihal321' }
+];
+
+
   const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -15,11 +24,17 @@
         return;
       }
     
-      // Example: Admin user
-      if (email === 'ayushi' && password === '123') {
+      //  Admin user
+
+     
+      const matchedAdmin = adminUsers.find(
+        (user) => user.email === email && user.password === password
+      );
+  
+      if (matchedAdmin) {
         const adminUser = {
-          name: 'Ayushi Gaur',
-          email: 'ayushi',
+          name: matchedAdmin.name,
+          email: matchedAdmin.email,
           role: 'admin',
         };
         localStorage.setItem('user', JSON.stringify(adminUser));
@@ -27,7 +42,7 @@
         navigate('/profile');
         return;
       }
-    
+  
       // Else, it's a normal customer
       const existingUser = JSON.parse(localStorage.getItem('user'));
     
