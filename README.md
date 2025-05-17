@@ -26,6 +26,55 @@ RabbitCom is a sleek and performant modern **React E-commerce frontend** built w
 
 ---
 
+
+# 🚀 SoftSell - License Buyback Platform
+
+SoftSell helps businesses and individuals turn unused software licenses into cash — fast, secure, and hassle-free.
+
+🌐 **Live Demo:** [https://nextbuild-opal.vercel.app](https://nextbuild-opal.vercel.app)
+
+---
+
+## 🌟 Features
+
+- 🧠 **AI Chat Assistant** – Smart chatbot that answers common questions with a modern, animated UI  
+- 🌞 **Dark/Light Mode** – Toggle between light and dark themes with persistent preference  
+- 📤 **License Upload** – Submit software license details using a sleek contact form  
+- ⚙️ **Step-by-Step Workflow** – Visual explanation of how SoftSell works  
+- 📱 **Responsive Design** – Fully responsive and mobile-friendly  
+- 💬 **Testimonials** – Real-world user feedback with stylish cards  
+
+---
+
+## 🔧 Tech Stack
+
+- ⚛️ React + Tailwind CSS + Framer Motion  
+- 🎨 Icons: Lucide (via `react-icons`)  
+- 🧠 State Management: React Hooks  
+- 🌗 Theme Management: `useDarkMode` custom hook  
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/gaurayushi/nextbuild.git
+cd nextbuild
+npm install
+npm run dev
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── HowItWorks.jsx
+│   ├── Testimonials.jsx
+│   ├── ContactForm.jsx
+│   └── ChatWidget.jsx
+├── hooks/
+│   └── useDarkMode.js
+└── App.jsx
+
+
 ## 📦 Project Setup
 
 ```bash
