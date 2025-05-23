@@ -115,9 +115,6 @@ SniplyBook/
 │   ├── .env          # Frontend environment variables
 │   └── vite.config.js
 
-
-
-
 # ⚡ Abun – Dashboard UI with DnD, Charts, and Radix UI
 
 Abun is a modern, elegant, and interactive dashboard app built with **React 19**, **Tailwind CSS**, **Radix UI**, and powerful drag-and-drop (DnD) capabilities via `@dnd-kit`. It includes components for charts, themes, modals, tooltips, and more.
@@ -159,8 +156,22 @@ Abun is a modern, elegant, and interactive dashboard app built with **React 19**
 
 ---
 
+## 🛠️ Getting Started
+
+### 📦 Install dependencies
+
+```bash
+npm install
+```
+
+or
+
+```bash
+pnpm install
+```
 
 ### 🧪 Run the app
+
 ```bash
 npm run dev
 ```
@@ -180,6 +191,21 @@ Then open [http://localhost:5173](http://localhost:5173)
 
 ---
 
+## 📂 Project Structure
+
+```
+abun/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── styles/
+│   └── main.tsx
+├── tailwind.config.js
+├── postcss.config.js
+└── vite.config.ts
+```
 
 ---
 
@@ -201,6 +227,3 @@ MIT License – feel free to use and modify!
 ---
 
 > Made with 💙 by [Ayushi Gaur](https://github.com/gaurayushi)
-
-
-
