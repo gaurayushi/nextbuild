@@ -69,23 +69,12 @@ Deployment in progress for both frontend and backend.
 
 ## 📸 UI Preview
 
-### 🧾 Auth Screens
-
-![Signup](./frontend/public/profile02.PNG)
-![Login](./frontend/public/profile05.PNG)
-
-### 💼 Dashboard & Bookmark Views
-
-![Dashboard](./frontend/public/profile06.PNG)
-![Bookmark Detail](./frontend/public/Captureprofrl.PNG)
-![Dashboard View](./frontend/public/profile01.PNG)
-
-### 📱 Responsive Design Previews
-
-![Tablet View](./frontend/public/cpatur93.PNG)
-![Mobile Layout](./frontend/public/Capture.PNG)
-
-> 📷 All UI screenshots captured from local development (`localhost:5173`)
+| Sign Up & Login | Dashboard & Bookmarks |
+|-----------------|------------------------|
+| ![profile02](https://github.com/user-attachments/assets/ad4f1337-fcc7-4c43-9c85-1c656abc5824) | ![profile05](https://github.com/user-attachments/assets/be0357d3-04d9-422b-8507-084ff8164325) |
+| ![profile06](https://github.com/user-attachments/assets/e5038828-ec17-4b55-b608-55e7643be855) | ![Captureprofrl](https://github.com/user-attachments/assets/4d1812e1-5f23-49df-a084-6ab8694a0d17) |
+| ![profile01](https://github.com/user-attachments/assets/0810f171-755f-48e9-9ebf-de85dadcc6e1) | ![cpatur93](https://github.com/user-attachments/assets/23c15f4c-4c90-4f5a-9b02-3e370d4241fe) |
+| ![Capture](https://github.com/user-attachments/assets/18063912-d7d1-4013-b4e2-a2a9e77a80f6) | ![ss](https://github.com/user-attachments/assets/471784ff-683c-4362-9e5b-52649cafc5cc) |
 
 
 ## 📁 Folder Structure
