@@ -66,6 +66,15 @@ Deployment in progress for both frontend and backend.
 
 ---
 
+
+## 📸 UI Preview
+
+| Sign Up & Login | Dashboard |
+|-----------------|-----------|
+| ![profile02](https://github.com/user-attachments/assets/dbecfcb4-f256-4f43-a853-b57c2a28539b) | ![profile05](https://github.com/user-attachments/assets/2b00da0f-0f6f-462b-badd-4bb53e34ea93) |
+| ![profile06](https://github.com/user-attachments/assets/cfed6be4-4ef4-4158-982d-00214321b3f6) | ![Captureprofrl](https://github.com/user-attachments/assets/39b6485d-e1cd-47f6-a10b-fb2e45576c8c) |
+
+
 ## 📁 Folder Structure
 
 ```
