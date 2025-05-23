@@ -25,6 +25,22 @@ RabbitCom is a sleek and performant modern **React E-commerce frontend** built w
 - **PostCSS + Autoprefixer** – Automatic vendor prefixing
 
 ---
+## 📸 UI Preview
+
+| Home Page | Products |
+|-----------|----------|
+| ![profile01](https://github.com/user-attachments/assets/376105b7-3d76-483d-b240-169b8bcea0f5) | ![profile02](https://github.com/user-attachments/assets/1582f497-3320-42db-8b15-0e95bb999cae) |
+
+| Product Detail | Cart |
+|----------------|------|
+| ![profile03](https://github.com/user-attachments/assets/7aa07373-4791-41f2-a2b0-ce7211d2fd03) | ![profile04](https://github.com/user-attachments/assets/05a1a03b-e1b2-4bcb-b3e4-3daf69002244) |
+
+| Checkout |
+|----------|
+| ![profile05](https://github.com/user-attachments/assets/c660167e-edc8-4d85-a66a-70cfa864774f) |
+
+> 💡 All images are from the production deployment on [rabbitcom.vercel.app](https://rabbitcom.vercel.app)
+
 
 
 # 📚 SniplyBook
