@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply min-h-screen bg-gradient-to-br from-gray-100 via-indigo-50 to-white;
+  }
+}
+
+@layer base {
+  html, body, #root {
+    background-color: #f7fafc; 
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(247,250,252,1) 0%,    
+      rgba(224,242,254,1) 50%, 
+      rgba(255,255,255,1) 100%
+    );
+
+    min-height: 100vh;
+  }
+
+  .dark html, .dark body, .dark #root {
+    background-color: #1a202c; 
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(26,32,44,1) 0%,       
+      rgba(45,55,72,1) 50%,      
+      rgba(26,32,44,1) 100%
+    );
+  }
+}
