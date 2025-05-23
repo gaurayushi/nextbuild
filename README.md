@@ -206,6 +206,69 @@ abun/
 
 ---
 
+
+
+
+# 🐚 SoftShell – Web3 Scrollable UI (React + Tailwind)
+
+SoftShell is a visually sleek and minimalistic Web3 UI built with **React 19**, **Tailwind CSS**, and **Framer Motion**. It focuses on smooth transitions, scroll interactions, and modern visual presentation for decentralized platforms.
+
+> 🔗 **Live Demo:** [https://web3-hdl3.vercel.app/](https://web3-hdl3.vercel.app/)
+
+---
+
+## 🚀 Tech Stack
+
+### 🧩 Frontend
+
+- **React 19**
+- **Tailwind CSS**
+- **Framer Motion** – Animations and transitions
+- **React Icons** – Prebuilt icon library
+- **Axios** – HTTP client for APIs
+- **tailwind-scrollbar-hide** – Clean scrollbar UX
+
+### 🧪 Dev Tooling
+
+- **Vite** – Lightning-fast dev server & build tool
+- **ESLint** – Code linting
+- **PostCSS + Autoprefixer** – Vendor prefixing
+- **TypeScript types** (via `@types/*`)
+
+---
+
+## 📸 UI Preview
+
+| Page View 1 | Page View 2 |
+|-------------|-------------|
+| ![work01](https://github.com/user-attachments/assets/5596ade5-9ed4-4ea1-81ff-0d5f13994d77) | ![work02](https://github.com/user-attachments/assets/86e77ebf-064a-42cd-ad99-bef9835a92fd) |
+
+| Page View 3 | Page View 4 |
+|-------------|-------------|
+| ![ks](https://github.com/user-attachments/assets/4a50d81a-890a-4c76-8847-21cc6907ff55) | ![worksss](https://github.com/user-attachments/assets/0561eed1-a49c-4f8d-a5c3-821cce4c831b) |
+
+| Page View 5 |
+|-------------|
+| ![sksksks](https://github.com/user-attachments/assets/7aa9a71d-b0e4-4423-8220-bcf723184cff) |
+
+---
+
+## ✨ Features
+
+- 🌐 Modern landing UI for Web3 experiences
+- 🎯 Animated transitions with Framer Motion
+- 🖼️ Horizontally scrollable content sections
+- ⚡ Lightweight performance via Vite + Tailwind
+
+
+
+
+
+
+
+
+
+
 ## 📄 License
 
 MIT License – feel free to use and modify!
