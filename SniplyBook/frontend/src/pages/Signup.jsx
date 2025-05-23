@@ -1,4 +1,4 @@
-
+// src/pages/Signup.jsx
 import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
@@ -24,7 +24,7 @@ export default function Signup() {
   const [pwFocus, setPwFocus] = useState(false);
   const navigate = useNavigate();
 
-  // Real-time strength checks
+  // Real-time password strength checks
   const checks = useMemo(() => ({
     length:    pwd.length >= 8,
     uppercase: /[A-Z]/.test(pwd),
@@ -39,6 +39,7 @@ export default function Signup() {
     }
     try {
       const { data } = await api.post('/auth/signup', {
+        name,               // ✅ FIXED: Added name here
         email,
         password: pwd
       });
@@ -57,6 +58,7 @@ export default function Signup() {
         onClick={() => navigate(-1)}
         className="absolute top-4 left-4 text-gray-600 text-xl cursor-pointer"
       />
+
       {/* Sign-in link */}
       <div className="absolute top-4 right-4 text-sm">
         Already a member?{' '}
@@ -124,9 +126,9 @@ export default function Signup() {
             <ul className="mt-2 text-xs space-y-1 pl-6 text-gray-700">
               {[
                 ['At least 8 characters',   checks.length],
-                ['An uppercase letter',      checks.uppercase],
-                ['A lowercase letter',       checks.lowercase],
-                ['A number or symbol',       checks.number]
+                ['An uppercase letter',     checks.uppercase],
+                ['A lowercase letter',      checks.lowercase],
+                ['A number or symbol',      checks.number]
               ].map(([label, ok]) => (
                 <li key={label} className="flex items-center">
                   <AiOutlineCheck
@@ -140,21 +142,22 @@ export default function Signup() {
             </ul>
           )}
         </div>
- 
-          {/* Sign up link moved here */}
-                 <p className="text-center text-sm text-gray-600">
-                   Don’t have an account?{' '}
-                   <Link to="/login" className="text-blue-600 hover:underline">
-                     Sign in
-                   </Link>
-                 </p>
-        {/* Sign Up button */}
+
+        {/* Sign Up Button */}
         <button
           type="submit"
           className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 rounded-full"
         >
           Sign Up
         </button>
+
+        {/* Login link at bottom */}
+        <p className="text-center text-sm text-gray-600">
+          Don’t have an account?{' '}
+          <Link to="/login" className="text-blue-600 hover:underline">
+            Sign in
+          </Link>
+        </p>
       </form>
     </div>
   );
