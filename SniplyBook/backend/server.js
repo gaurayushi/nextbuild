@@ -12,12 +12,22 @@ dotenv.config();
 
 const app = express();
 
-// 2) Enable CORS for your frontend origin
-app.use(
-  cors({
-    origin: process.env.FRONTEND || '*'  
-  })
-);
+// 2) Enable CORS for multiple frontend origins
+const allowedOrigins = process.env.FRONTENDS?.split(',') || [];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin || allowedOrigins.includes(origin.trim())) {
+      callback(null, true);
+    } else {
+      console.error('❌ Blocked by CORS:', origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+}));
 
 // 3) Parse JSON bodies
 app.use(express.json());
@@ -32,5 +42,5 @@ app.use('/api/bookmarks', bookmarkRoutes);
 // 6) Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+  console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
