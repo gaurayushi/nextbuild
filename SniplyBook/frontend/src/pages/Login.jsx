@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import {
@@ -47,10 +46,7 @@ export default function Login() {
         className="absolute top-4 left-4 text-gray-600 text-xl cursor-pointer"
       />
 
-      <form
-        onSubmit={submit}
-        className="mt-8 bg-white/70 backdrop-blur-md rounded-tr-[4rem] rounded-br-[4rem] shadow-lg px-6 py-8 space-y-4"
-      >
+      <form onSubmit={submit} className="mt-8 bg-white/70 backdrop-blur-md rounded-tr-[4rem] rounded-br-[4rem] shadow-lg px-6 py-8 space-y-4">
         <h2 className="text-3xl font-bold text-center">Login</h2>
         <p className="text-gray-500 text-sm text-center">Securely access your account</p>
 
@@ -109,10 +105,16 @@ export default function Login() {
 
         {/* Social login */}
         <div className="flex justify-center gap-4">
-          <button type="button" className="p-2 bg-white rounded-full shadow-md">
+          <button
+            type="button"
+            className="p-2 bg-white rounded-full shadow-md"
+          >
             <FaFacebookF className="text-blue-600" />
           </button>
-          <button type="button" className="p-2 bg-white rounded-full shadow-md">
+          <button
+            type="button"
+            className="p-2 bg-white rounded-full shadow-md"
+          >
             <FaGoogle className="text-red-500" />
           </button>
         </div>
