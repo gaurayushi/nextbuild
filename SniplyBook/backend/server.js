@@ -1,5 +1,3 @@
-// backend/server.js
-
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
@@ -15,11 +13,13 @@ const app = express();
 
 // ✅ Allow multiple frontend origins
 const allowedOrigins = (process.env.FRONTENDS || '').split(',');
-
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow undefined origin (Postman, mobile apps, etc.)
-    if (!origin || allowedOrigins.includes(origin.trim()) || /^https:\/\/.*\.vercel\.app$/.test(origin)) {
+    if (
+      !origin ||
+      allowedOrigins.includes(origin.trim()) ||
+      /^https:\/\/.*\.vercel\.app$/.test(origin)  
+    ) {
       callback(null, true);
     } else {
       console.error('❌ Blocked by CORS:', origin);
@@ -37,7 +37,7 @@ app.use(cookieParser());
 app.use('/api/auth', authRoutes);
 app.use('/api/bookmarks', bookmarkRoutes);
 
-// ✅ DB connection + Server start
+// ✅ MongoDB + Server Start
 connectDB().then(() => {
   app.listen(process.env.PORT || 5000, () =>
     console.log(`🚀 Server running at http://localhost:${process.env.PORT}`)
