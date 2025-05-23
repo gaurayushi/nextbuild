@@ -116,15 +116,91 @@ SniplyBook/
 │   └── vite.config.js
 
 
-## 📦 Project Setup
 
+
+# ⚡ Abun – Dashboard UI with DnD, Charts, and Radix UI
+
+Abun is a modern, elegant, and interactive dashboard app built with **React 19**, **Tailwind CSS**, **Radix UI**, and powerful drag-and-drop (DnD) capabilities via `@dnd-kit`. It includes components for charts, themes, modals, tooltips, and more.
+
+> 🔗 **Live Demo:** [https://nextbuild-abun.vercel.app/](https://nextbuild-abun.vercel.app/)
+
+---
+
+## 🚀 Tech Stack
+
+### 🧩 Frontend
+
+- **React 19**
+- **Tailwind CSS**
+- **@dnd-kit** – Drag-and-drop interactivity
+- **Radix UI** – Accessible headless UI components
+- **Lucide React** – Icon library
+- **Zod** – Schema validation
+- **Recharts** – Chart components
+- **Sonner** – Toast notifications
+- **Vaul** – Drawer & sheet component
+- **Next Themes** – Light/dark theme toggle
+- **Class Variance Authority / Tailwind Variants / tailwind-merge** – Utility class helpers
+
+### 🧪 Dev Tooling
+
+- **Vite** – Lightning-fast bundler
+- **ESLint** – Linting with React hooks & refresh plugins
+- **PostCSS + Autoprefixer**
+- **TypeScript (via @types)**
+
+---
+
+## 📸 UI Preview
+
+| Dashboard View | Drag & Drop |
+|----------------|-------------|
+| ![work](https://github.com/user-attachments/assets/2b5526c6-4a59-4e9f-9f10-220c75fa03cb) | ![wrk01](https://github.com/user-attachments/assets/8e2d618d-47aa-4a0b-82bc-ef7b944c2151) |
+
+---
+
+
+### 🧪 Run the app
 ```bash
-# 1. Clone the repo
-git clone https://github.com/gaurayushi/RabbitCom.git
-cd RabbitCom
-
-# 2. Install dependencies
-npm install
-
-# 3. Run the development server
 npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🧩 Scripts
+
+| Script      | Description                    |
+|-------------|--------------------------------|
+| `dev`       | Start Vite dev server          |
+| `build`     | Build for production           |
+| `preview`   | Preview the built site locally |
+| `lint`      | Run ESLint checks              |
+
+---
+
+
+---
+
+## ✨ Features
+
+- Drag-and-drop with reorderable panels
+- Responsive, animated UI with smooth transitions
+- Charts powered by `Recharts`
+- Dark/light theme support
+- Headless UI via `Radix`
+- Clean, accessible, mobile-friendly design
+
+---
+
+## 📄 License
+
+MIT License – feel free to use and modify!
+
+---
+
+> Made with 💙 by [Ayushi Gaur](https://github.com/gaurayushi)
+
+
+
