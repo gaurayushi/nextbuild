@@ -42,12 +42,12 @@ RabbitCom is a sleek and performant modern **React E-commerce frontend** built w
 > 💡 All images are from the production deployment on [rabbitcom.vercel.app](https://rabbitcom.vercel.app)
 
 
-
 # 📚 SniplyBook
 
 A full-stack MERN application for bookmarking and organizing content. Built with React, Node.js, Express, and MongoDB.
 
 ## 🌐 Live Demo (Coming Soon)
+
 Deployment in progress for both frontend and backend.
 
 ---
@@ -63,12 +63,12 @@ Deployment in progress for both frontend and backend.
 
 ## 🧰 Tech Stack
 
-| Layer       | Tech                        |
-|------------|-----------------------------|
-| Frontend    | React, TailwindCSS, Axios    |
-| Backend     | Node.js, Express, Mongoose   |
-| Database    | MongoDB Atlas                |
-| Auth        | JWT, bcryptjs                |
+| Layer     | Tech                    |
+|-----------|-------------------------|
+| Frontend  | React, TailwindCSS, Axios |
+| Backend   | Node.js, Express, Mongoose |
+| Database  | MongoDB Atlas           |
+| Auth      | JWT, bcryptjs           |
 
 ---
 
@@ -82,7 +82,6 @@ Deployment in progress for both frontend and backend.
 
 ---
 
-
 ## 📸 UI Preview
 
 | Sign Up & Login | Dashboard & Bookmarks |
@@ -92,28 +91,39 @@ Deployment in progress for both frontend and backend.
 | ![profile01](https://github.com/user-attachments/assets/0810f171-755f-48e9-9ebf-de85dadcc6e1) | ![cpatur93](https://github.com/user-attachments/assets/23c15f4c-4c90-4f5a-9b02-3e370d4241fe) |
 | ![Capture](https://github.com/user-attachments/assets/18063912-d7d1-4013-b4e2-a2a9e77a80f6) | ![ss](https://github.com/user-attachments/assets/471784ff-683c-4362-9e5b-52649cafc5cc) |
 
+---
 
 ## 📁 Folder Structure
 
 ```
 SniplyBook/
-├── backend/          # Express backend (API & MongoDB connection)
-│   ├── config/       # DB connection setup
-│   ├── controllers/  # Route handler logic (auth, bookmarks)
-│   ├── models/       # Mongoose schemas
-│   ├── routes/       # API route definitions
-│   ├── .env          # Backend environment variables
-│   └── server.js     # Entry point
+├── backend/             Express backend (API & MongoDB connection)
+│   ├── config/          DB connection setup
+│   ├── controllers/     Route handler logic (auth, bookmarks)
+│   ├── models/          Mongoose schemas
+│   ├── routes/          API route definitions
+│   ├── .env             Backend environment variables
+│   └── server.js        Entry point
 │
-├── frontend/         # React frontend (Vite-based)
+├── frontend/            React frontend (Vite-based)
 │   ├── src/
-│   │   ├── api/      # Axios config
-│   │   ├── pages/    # Login, Signup, Dashboard, etc.
-│   │   ├── utils/    # Auth helpers, Toastify, etc.
-│   │   └── App.jsx   # Main app entry
+│   │   ├── api/         Axios config
+│   │   ├── pages/       Login, Signup, Dashboard, etc.
+│   │   ├── utils/       Auth helpers, Toastify, etc.
+│   │   └── App.jsx      Main app entry
 │   ├── public/
-│   ├── .env          # Frontend environment variables
+│   ├── .env             Frontend environment variables
 │   └── vite.config.js
+```
+
+---
+
+## 📄 License
+
+MIT License – feel free to use, modify, and contribute.
+
+
+
 
 # ⚡ Abun – Dashboard UI with DnD, Charts, and Radix UI
 
@@ -153,30 +163,6 @@ Abun is a modern, elegant, and interactive dashboard app built with **React 19**
 | Dashboard View | Drag & Drop |
 |----------------|-------------|
 | ![work](https://github.com/user-attachments/assets/2b5526c6-4a59-4e9f-9f10-220c75fa03cb) | ![wrk01](https://github.com/user-attachments/assets/8e2d618d-47aa-4a0b-82bc-ef7b944c2151) |
-
----
-
-## 🛠️ Getting Started
-
-### 📦 Install dependencies
-
-```bash
-npm install
-```
-
-or
-
-```bash
-pnpm install
-```
-
-### 🧪 Run the app
-
-```bash
-npm run dev
-```
-
-Then open [http://localhost:5173](http://localhost:5173)
 
 ---
 
