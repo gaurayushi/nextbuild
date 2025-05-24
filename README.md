@@ -69,12 +69,15 @@ Database	MongoDB Atlas
 Auth	JWT, bcryptjs
 Hosting	Vercel (Frontend), Render (Backend)
 
-📸 UI Preview
-Sign Up / Login	Dashboard
-|  ![working](https://github.com/user-attachments/assets/0f1de30c-f77e-4cf8-8bc3-92e03581b7bd)  |    |  ![working01](https://github.com/user-attachments/assets/9f01499b-6d7f-44f9-b8de-0f18aebfb014)  |
-| ![working02](https://github.com/user-attachments/assets/fab84ef8-4988-4170-b95e-2bf40226ca63)  | ![working03](https://github.com/user-attachments/assets/6cb183c4-d8a2-4a62-bcf5-5f8562a76b09)  |
-![working04](https://github.com/user-attachments/assets/e061c29a-f3c8-4b68-af65-abb29c7bed82)
 
+
+## 📸 UI Preview
+
+| Sign Up / Login | Dashboard |
+|------------------|-----------|
+| ![working](https://github.com/user-attachments/assets/0f1de30c-f77e-4cf8-8bc3-92e03581b7bd) | ![working01](https://github.com/user-attachments/assets/9f01499b-6d7f-44f9-b8de-0f18aebfb014) |
+| ![working02](https://github.com/user-attachments/assets/fab84ef8-4988-4170-b95e-2bf40226ca63) | ![working03](https://github.com/user-attachments/assets/6cb183c4-d8a2-4a62-bcf5-5f8562a76b09) |
+| ![working04](https://github.com/user-attachments/assets/e061c29a-f3c8-4b68-af65-abb29c7bed82) | *(More features live on site)* |
 	
 
 
