@@ -76,45 +76,6 @@ Sign Up / Login	Dashboard
 ![working04](https://github.com/user-attachments/assets/e061c29a-f3c8-4b68-af65-abb29c7bed82)
 
 	
-	(More features available live)
-
-📁 Folder Structure
-bash
-Copy
-Edit
-SniplyBook/
-├── backend/               # Express API
-│   ├── models/            # Mongoose schemas
-│   ├── routes/            # API endpoints
-│   ├── controllers/       # Auth & bookmark logic
-│   └── server.js
-│
-├── frontend/              # React Vite frontend
-│   ├── components/        # Shared components
-│   ├── pages/             # Dashboard, Auth, etc.
-│   └── App.jsx
-🧪 Getting Started
-Requires: Node.js v18+
-
-Environment:
-
-bash
-Copy
-Edit
-VITE_API_BASE_URL=https://nextbuild-1.onrender.com/api
-📄 License
-MIT License – free to use and modify.
-
-💡 Built by Ayushi Gaur with 💙
-
-Let me know if you want this as a markdown .md file or pasted into a README!
-
-
-
-
-
-
-
 
 
 
