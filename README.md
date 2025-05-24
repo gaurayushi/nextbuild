@@ -42,60 +42,81 @@ RabbitCom is a sleek and performant modern **React E-commerce frontend** built w
 > 💡 All images are from the production deployment on [rabbitcom.vercel.app](https://rabbitcom.vercel.app)
 
 
-# 📚 SniplyBook
-
-A full-stack MERN application for bookmarking and organizing content. Built with React, Node.js, Express, and MongoDB.
-
-## 🌐 Live Demo
-
-```env
-# Frontend Deployment URL
-VITE_FRONTEND_URL=https://nextbuild-wrrp.vercel.app
-
----
-
-## 🚀 Features
-
-- 🔐 User Authentication (Sign up & Log in)
-- 🔖 Bookmark content with ease
-- 📁 Store user data securely in MongoDB
-- 💡 Frontend and backend fully separated for scalability
-
----
-
-## 🧰 Tech Stack
-
-| Layer     | Tech                    |
-|-----------|-------------------------|
-| Frontend  | React, TailwindCSS, Axios |
-| Backend   | Node.js, Express, Mongoose |
-| Database  | MongoDB Atlas           |
-| Auth      | JWT, bcryptjs           |
-
----
-
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- Node.js (v18+)
-- MongoDB Atlas account
-- [pnpm](https://pnpm.io/) or npm/yarn (optional)
-
----
-
-## 📸 UI Preview
 
 
 
-| Sign Up & Login                           | Dashboard & Bookmarks                        |
-|------------------------------------------|----------------------------------------------|
-| ![working](https://github.com/user-attachments/assets/4cddb6f8-c938-4630-b36a-917340e2362e)   | ![working01](https://github.com/user-attachments/assets/cba8caee-713c-4505-933a-5aa931326bb7) |
-| ![working02](https://github.com/user-attachments/assets/905df79c-f748-4842-bfd9-3f28bfcf13bb) | ![working03](https://github.com/user-attachments/assets/4ef5f597-ba74-4a4f-b481-50b3f572d805) |
-| ![working04](https://github.com/user-attachments/assets/6f1974b0-ac80-40ef-ab1c-fdff7219f077) |                                                  |
+# SniplyBook – Bookmarking & Organizing Tool (Full-stack MERN)
+SniplyBook is a full-featured MERN stack application for saving, managing, and summarizing content from the web. It features a clean dashboard, category tagging, user auth, and real-time link previews.
+
+🔗 Live Demo: https://nextbuild-wrrp.vercel.app
+
+🚀 Features
+🔐 User Authentication (Sign up & Log in)
+
+🔖 Bookmark content from URLs
+
+🧠 AI summaries (auto-generated metadata)
+
+🗃️ Categorization & tagging
+
+🌙 Theme-aware UI with Framer Motion animations
+
+🧰 Tech Stack
+Layer	Tech
+Frontend	React, TailwindCSS, Axios
+Backend	Node.js, Express, Mongoose
+Database	MongoDB Atlas
+Auth	JWT, bcryptjs
+Hosting	Vercel (Frontend), Render (Backend)
+
+📸 UI Preview
+Sign Up / Login	Dashboard
+|  ![working](https://github.com/user-attachments/assets/0f1de30c-f77e-4cf8-8bc3-92e03581b7bd)  |    |  ![working01](https://github.com/user-attachments/assets/9f01499b-6d7f-44f9-b8de-0f18aebfb014)  |
+| ![working02](https://github.com/user-attachments/assets/fab84ef8-4988-4170-b95e-2bf40226ca63)  | ![working03](https://github.com/user-attachments/assets/6cb183c4-d8a2-4a62-bcf5-5f8562a76b09)  |
+![working04](https://github.com/user-attachments/assets/e061c29a-f3c8-4b68-af65-abb29c7bed82)
+
+	
+	(More features available live)
+
+📁 Folder Structure
+bash
+Copy
+Edit
+SniplyBook/
+├── backend/               # Express API
+│   ├── models/            # Mongoose schemas
+│   ├── routes/            # API endpoints
+│   ├── controllers/       # Auth & bookmark logic
+│   └── server.js
+│
+├── frontend/              # React Vite frontend
+│   ├── components/        # Shared components
+│   ├── pages/             # Dashboard, Auth, etc.
+│   └── App.jsx
+🧪 Getting Started
+Requires: Node.js v18+
+
+Environment:
+
+bash
+Copy
+Edit
+VITE_API_BASE_URL=https://nextbuild-1.onrender.com/api
+📄 License
+MIT License – free to use and modify.
+
+💡 Built by Ayushi Gaur with 💙
+
+Let me know if you want this as a markdown .md file or pasted into a README!
 
 
----
+
+
+
+
+
+
+
 
 
 ## 📁 Folder Structure
