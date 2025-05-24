@@ -46,9 +46,11 @@ RabbitCom is a sleek and performant modern **React E-commerce frontend** built w
 
 A full-stack MERN application for bookmarking and organizing content. Built with React, Node.js, Express, and MongoDB.
 
-## 🌐 Live Demo (Coming Soon)
+## 🌐 Live Demo
 
-Deployment in progress for both frontend and backend.
+```env
+# Frontend Deployment URL
+VITE_FRONTEND_URL=https://nextbuild-wrrp.vercel.app
 
 ---
 
@@ -84,14 +86,17 @@ Deployment in progress for both frontend and backend.
 
 ## 📸 UI Preview
 
-| Sign Up & Login | Dashboard & Bookmarks |
-|-----------------|------------------------|
-| ![profile02](https://github.com/user-attachments/assets/ad4f1337-fcc7-4c43-9c85-1c656abc5824) | ![profile05](https://github.com/user-attachments/assets/be0357d3-04d9-422b-8507-084ff8164325) |
-| ![profile06](https://github.com/user-attachments/assets/e5038828-ec17-4b55-b608-55e7643be855) | ![Captureprofrl](https://github.com/user-attachments/assets/4d1812e1-5f23-49df-a084-6ab8694a0d17) |
-| ![profile01](https://github.com/user-attachments/assets/0810f171-755f-48e9-9ebf-de85dadcc6e1) | ![cpatur93](https://github.com/user-attachments/assets/23c15f4c-4c90-4f5a-9b02-3e370d4241fe) |
-| ![Capture](https://github.com/user-attachments/assets/18063912-d7d1-4013-b4e2-a2a9e77a80f6) | ![ss](https://github.com/user-attachments/assets/471784ff-683c-4362-9e5b-52649cafc5cc) |
+
+
+| Sign Up & Login                           | Dashboard & Bookmarks                        |
+|------------------------------------------|----------------------------------------------|
+| ![working](https://github.com/user-attachments/assets/4cddb6f8-c938-4630-b36a-917340e2362e)   | ![working01](https://github.com/user-attachments/assets/cba8caee-713c-4505-933a-5aa931326bb7) |
+| ![working02](https://github.com/user-attachments/assets/905df79c-f748-4842-bfd9-3f28bfcf13bb) | ![working03](https://github.com/user-attachments/assets/4ef5f597-ba74-4a4f-b481-50b3f572d805) |
+| ![working04](https://github.com/user-attachments/assets/6f1974b0-ac80-40ef-ab1c-fdff7219f077) |                                                  |
+
 
 ---
+
 
 ## 📁 Folder Structure
 
