@@ -1,26 +1,25 @@
-
 import React from 'react';
 import { SiTiktok } from 'react-icons/si';
-import { FiKey }    from 'react-icons/fi';
-import instaLogo    from '../assets/instra.webp';
-import fbLogo       from '../assets/facebook.png';
+import { FiKey } from 'react-icons/fi';
+import instaLogo from '../assets/instra.webp';
+import fbLogo from '../assets/facebook.png';
 
 export default function RightPanel() {
   return (
-    <div className="flex flex-col items-start space-y-8">
-      {/* Top: Facebook oval */}
-      <div className="bg-white rounded-full px-4 py-4 shadow-md ml-10 flex items-center justify-center">
-        <img src={fbLogo} alt="Facebook" className="w-8 h-8" />
+    <div className="flex flex-col items-start space-y-8 w-full max-w-sm mx-auto px-4">
+      {/* Facebook icon */}
+      <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-full w-14 h-14 flex items-center justify-center shadow-md">
+        <img src={fbLogo} alt="Facebook" className="w-7 h-7" />
       </div>
 
-      {/* Inbox Pill */}
-      <div className="bg-white rounded-full px-8 py-4 shadow-lg w-full max-w-md flex items-center justify-between">
-        <div className="flex flex-col items-start">
-          <span className="text-gray-800 font-medium">Inbox</span>
-          <span className="text-2xl font-bold mt-1">176,18</span>
+      {/* Inbox Card */}
+      <div className="bg-white/30 backdrop-blur-lg border border-white/40 rounded-2xl p-5 shadow-lg w-full flex justify-between items-center">
+        <div>
+          <p className="text-gray-700 font-medium">Inbox</p>
+          <p className="text-3xl font-bold text-gray-900 mt-1">176,18</p>
         </div>
         <div className="flex items-center space-x-3">
-          <div className="bg-blue-900 text-white rounded-full w-10 h-10 flex items-center justify-center">
+          <div className="bg-indigo-800 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-semibold">
             45
           </div>
           <svg className="h-6 w-20" viewBox="0 0 50 20" fill="none">
@@ -33,26 +32,28 @@ export default function RightPanel() {
         </div>
       </div>
 
-      {/* Middle: Instagram oval */}
-      <div className="bg-white rounded-full px-4 py-4 shadow-md flex items-center justify-center ml-10">
-        <img src={instaLogo} alt="Instagram" className="w-8 h-8" />
+      {/* Instagram icon */}
+      <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-full w-14 h-14 flex items-center justify-center shadow-md">
+        <img src={instaLogo} alt="Instagram" className="w-7 h-7" />
       </div>
 
-      {/* Your Data Rules Card */}
-      <div className="bg-white rounded-2xl p-6 w-80 shadow-lg">
+      {/* Data card */}
+      <div className="bg-white/30 backdrop-blur-lg border border-white/40 rounded-2xl p-6 shadow-xl w-full">
         <div className="flex items-start">
-          <FiKey className="text-yellow-400 text-3xl mr-4" />
+          <FiKey className="text-yellow-400 text-2xl mr-4 mt-1" />
           <div>
-            <h3 className="text-gray-800 font-semibold text-lg">Your data, your rules</h3>
-            <p className="text-gray-500 mt-2 text-sm">
+            <h3 className="text-gray-900 font-semibold text-lg">
+              Your data, your rules
+            </h3>
+            <p className="text-gray-600 mt-2 text-sm leading-snug">
               Your data belongs to you, and our encryption ensures that
             </p>
           </div>
         </div>
       </div>
 
-      {/* Bottom: TikTok diamond turned oval */}
-      <div className="bg-white rounded-full px-6 py-3 shadow-md flex items-center justify-center">
+      {/* TikTok icon */}
+      <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-full w-14 h-14 flex items-center justify-center shadow-md">
         <SiTiktok className="text-2xl text-gray-900" />
       </div>
     </div>

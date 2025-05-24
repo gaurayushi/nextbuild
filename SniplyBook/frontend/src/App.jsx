@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
+import { ToastContainer } from 'react-toastify';
 
 function PrivateRoute({ children }) {
   return localStorage.getItem('token')
@@ -13,6 +14,7 @@ function PrivateRoute({ children }) {
 export default function App() {
   return (
     <BrowserRouter>
+    <ToastContainer/>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -24,7 +26,10 @@ export default function App() {
             </PrivateRoute>
           }
         />
-        {/* Always go to login on root load */}
+        {/* Always go to login on root load
+        
+      
+        */}
         <Route path="/" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="mt-20 px-6 py-12 text-center text-sm backdrop-blur-md bg-white border-t border-gray-100">
+    <footer className="mt-20 px-6 py-12 text-center text-sm ">
       {/* Trusted by section */}
       <div className="mb-10">
         <p className="text-xs font-medium text-gray-500 mb-6">Trusted by</p>
