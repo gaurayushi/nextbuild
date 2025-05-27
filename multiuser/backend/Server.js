@@ -1,7 +1,9 @@
+// server.js
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 const userRoutes = require("./routes/user.routes");
 const locationRoutes = require("./routes/location.routes");
 
@@ -18,11 +20,12 @@ app.use(cors({
 }));
 
 app.use(express.json());
+app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
 
 // Routes
 app.use("/api/users", userRoutes);
-app.use("/api/location", require("./routes/location.routes"));
+app.use("/api/location", locationRoutes);
 
 // Mongo Connection
 mongoose.connect(process.env.MONGO_URI)
