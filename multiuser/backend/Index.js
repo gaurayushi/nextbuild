@@ -1,40 +1,62 @@
-// server.js
-require("dotenv").config();
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const cookieParser = require("cookie-parser");
-const userRoutes = require("./routes/user.routes");
-const locationRoutes = require("./routes/location.routes");
+import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
 
+import userRoutes from './routes/user.routes.js';
+import locationRoutes from './routes/location.routes.js';
+
+// Load env variables
+dotenv.config();
+
+// Create app
 const app = express();
 
-// Enable CORS
-const allowedOrigins = process.env.FRONTENDS?.split(",") || [];
-app.use(cors({
-  origin: (origin, cb) => {
-    if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
-    return cb(new Error("Blocked by CORS"));
-  },
-  credentials: true
-}));
+// Parse allowed frontend URLs from .env
+const allowedOrigins = new Set(
+  (process.env.FRONTENDS || '').split(',').map(origin => origin.trim())
+);
 
+// CORS configuration
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.has(origin)) {
+        callback(null, true);
+      } else {
+        console.error('❌ Blocked by CORS:', origin);
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+  })
+);
+
+// Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use("/uploads", express.static("uploads"));
+app.use('/uploads', express.static('uploads'));
 
 // Routes
-app.use("/api/users", userRoutes);
-app.use("/api/location", locationRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/location', locationRoutes);
 
-// Mongo Connection
-mongoose.connect(process.env.MONGO_URI)
+// MongoDB Connection + Start Server
+const PORT = process.env.PORT || 5000;
+
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
   .then(() => {
-    console.log("✅ MongoDB connected");
-    app.listen(process.env.PORT || 5000, () => {
-      console.log(`🚀 Server running at http://localhost:${process.env.PORT}`);
+    console.log('✅ MongoDB connected');
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on http://localhost:${PORT}`);
     });
   })
   .catch((err) => {
-    console.error("❌ MongoDB connection error", err);
+    console.error('❌ MongoDB connection error:', err);
   });
