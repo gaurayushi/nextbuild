@@ -4,8 +4,8 @@
   "description": "Multi-Step Form Backend with Express, MongoDB, and File Upload",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node Index.js",
+    "dev": "nodemon  Index.js"
   },
   "keywords": [
     "express",
