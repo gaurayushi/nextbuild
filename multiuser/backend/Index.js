@@ -7,18 +7,16 @@ import cookieParser from 'cookie-parser';
 import userRoutes from './routes/user.routes.js';
 import locationRoutes from './routes/location.routes.js';
 
-// Load env variables
 dotenv.config();
 
-// Create app
 const app = express();
 
-// Parse allowed frontend URLs from .env
+// ✔ Parse multiple allowed frontend origins
 const allowedOrigins = new Set(
   (process.env.FRONTENDS || '').split(',').map(origin => origin.trim())
 );
 
-// CORS configuration
+// ✅ CORS config with multiple origins
 app.use(
   cors({
     origin: (origin, callback) => {
@@ -34,7 +32,6 @@ app.use(
   })
 );
 
-// Middleware
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static('uploads'));
@@ -43,14 +40,13 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/users', userRoutes);
 app.use('/api/location', locationRoutes);
 
-// MongoDB Connection + Start Server
+// MongoDB connect & run server
 const PORT = process.env.PORT || 5000;
 
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => {
     console.log('✅ MongoDB connected');
     app.listen(PORT, () => {
