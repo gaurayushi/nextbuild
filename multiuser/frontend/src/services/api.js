@@ -1,6 +1,8 @@
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export async function checkUsername(username) {
   try {
-    const response = await fetch(`http://localhost:5000/api/users/check-username?username=${username}`);
+    const response = await fetch(`${BASE_URL}/users/check-username?username=${username}`);
     const data = await response.json();
     return data.available;
   } catch (error) {
@@ -10,17 +12,17 @@ export async function checkUsername(username) {
 }
 
 export async function fetchCountries() {
-  const res = await fetch("http://localhost:5000/api/location/countries");
+  const res = await fetch(`${BASE_URL}/location/countries`);
   return res.json();
 }
 
 export async function fetchStates(countryId) {
-  const res = await fetch(`http://localhost:5000/api/location/states/${countryId}`);
+  const res = await fetch(`${BASE_URL}/location/states/${countryId}`);
   return res.json();
 }
 
 export async function fetchCities(stateId) {
-  const res = await fetch(`http://localhost:5000/api/location/cities/${stateId}`);
+  const res = await fetch(`${BASE_URL}/location/cities/${stateId}`);
   return res.json();
 }
 
@@ -31,7 +33,7 @@ export async function submitUser(formData) {
       form.append(key, formData[key]);
     }
 
-    const response = await fetch("http://localhost:5000/api/users/create", {
+    const response = await fetch(`${BASE_URL}/users/create`, {
       method: "POST",
       body: form,
     });
