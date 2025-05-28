@@ -250,23 +250,23 @@ abun/
 | `start`       | Start backend server         |
 
 ---
-
-## 📂 Project Structure
-nextbuild/
-├── client/ # Vite frontend
-│ ├── src/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ ├── components/
-│ │ ├── utils/
-│ │ └── main.jsx
-│ └── vite.config.js
-├── server/ # Express backend
-│ ├── routes/
-│ ├── controllers/
-│ ├── models/
-│ ├── middleware/
-│ └── server.js
+<br>
+## 📂 Project Structure <br>
+nextbuild/<br>
+├── client/ # Vite frontend       <br>
+│ ├── src/ <br>
+│ │ ├── pages/<br>
+│ │ ├── services/<br>
+│ │ ├── components/<br>
+│ │ ├── utils/<br>
+│ │ └── main.jsx<br>
+│ └── vite.config.js<br>
+├── server/ # Express backend<br>
+│ ├── routes/<br>
+│ ├── controllers/<br>
+│ ├── models/<br>
+│ ├── middleware/<br>
+│ └── server.js<br>
 
 
 
