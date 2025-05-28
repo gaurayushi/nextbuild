@@ -198,6 +198,80 @@ abun/
 
 
 
+# ⚡ NextBuild – Fullstack Multi-Step User Onboarding App
+
+**NextBuild** is a sleek, responsive, and interactive fullstack web application built using **React**, **Vite**, **Tailwind CSS**, **Express**, and **MongoDB**. It features multi-step onboarding forms, image uploads, dynamic country/state/city selectors, and robust server-side validation with JWT-authenticated submission.
+
+> 🔗 **Live Demo:** [https://nextbuild-obluuelzf-ayushi-gaurs-projects-f4fbba4d.vercel.app/](https://nextbuild-obluuelzf-ayushi-gaurs-projects-f4fbba4d.vercel.app/)
+
+---
+
+## 🚀 Tech Stack
+
+### 🧩 Frontend (Vite + React)
+
+- **React 18/19**
+- **Vite**
+- **Tailwind CSS** – Utility-first styling
+- **React Toastify** – User notifications
+- **React Icons** – Icon set
+- **Framer Motion** – Animations
+- **FormData API** – Image uploads
+
+### 🌐 Backend (Node + Express)
+
+- **Express.js**
+- **MongoDB (Mongoose)** – Document database
+- **Multer** – File uploads
+- **JWT** – Authentication
+- **CORS** – Cross-origin config for frontend/backend
+
+---
+
+## 📸 UI Preview
+
+| Personal Info | Gender Select | Review |
+|---------------|---------------|--------|
+| ![working](https://github.com/user-attachments/assets/02a2d930-8e1b-4a18-a6ac-a9687f97a454) | ![working01](https://github.com/user-attachments/assets/50b10f88-d08b-4811-adf8-44e7a633f436) | ![wokinv04](https://github.com/user-attachments/assets/305b6010-bafa-4ea0-a5b5-a0b420e59a0b) |
+
+| Location Step | Completion Screen |
+|---------------|-------------------|
+| ![working05](https://github.com/user-attachments/assets/b2f8a6d8-4e57-4cae-9e57-4cc04f00d7bc) | ![workng09](https://github.com/user-attachments/assets/232b53d5-0eaf-4c44-87e3-4ff9f9bb1ed5) |
+
+---
+
+## 🧩 Scripts
+
+| Script        | Description                  |
+|---------------|------------------------------|
+| `dev`         | Start frontend dev server    |
+| `build`       | Build frontend for production|
+| `preview`     | Preview production frontend  |
+| `start`       | Start backend server         |
+
+---
+
+## 📂 Project Structure
+nextbuild/
+├── client/ # Vite frontend
+│ ├── src/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ ├── components/
+│ │ ├── utils/
+│ │ └── main.jsx
+│ └── vite.config.js
+├── server/ # Express backend
+│ ├── routes/
+│ ├── controllers/
+│ ├── models/
+│ ├── middleware/
+│ └── server.js
+
+
+
+
+
 
 # 🐚 SoftShell – Web3 Scrollable UI (React + Tailwind)
 
