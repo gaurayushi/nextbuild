@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export async function checkUsername(username) {
   try {
@@ -12,18 +12,33 @@ export async function checkUsername(username) {
 }
 
 export async function fetchCountries() {
-  const res = await fetch(`${BASE_URL}/location/countries`);
-  return res.json();
+  try {
+    const res = await fetch(`${BASE_URL}/location/countries`);
+    return res.json();
+  } catch (error) {
+    console.error("Failed to fetch countries:", error);
+    return [];
+  }
 }
 
 export async function fetchStates(countryId) {
-  const res = await fetch(`${BASE_URL}/location/states/${countryId}`);
-  return res.json();
+  try {
+    const res = await fetch(`${BASE_URL}/location/states/${countryId}`);
+    return res.json();
+  } catch (error) {
+    console.error("Failed to fetch states:", error);
+    return [];
+  }
 }
 
 export async function fetchCities(stateId) {
-  const res = await fetch(`${BASE_URL}/location/cities/${stateId}`);
-  return res.json();
+  try {
+    const res = await fetch(`${BASE_URL}/location/cities/${stateId}`);
+    return res.json();
+  } catch (error) {
+    console.error("Failed to fetch cities:", error);
+    return [];
+  }
 }
 
 export async function submitUser(formData) {
