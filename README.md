@@ -357,14 +357,14 @@ SoftShell is a visually sleek and minimalistic Web3 UI built with **React 19**, 
 
 ---
 
-## 📂 Folder Structure
-PhotoAlbum/
-├── images/ # Uploaded images go here
-├── index.php # Main app logic
-├── style.css # CSS styles
-├── script.js # JS for image preview
-├── delete-icon.svg # SVG delete icon (inlined via <svg>)
-└── README.md # Project documentation
+## 📂 Folder Structure <br>
+PhotoAlbum/<br>
+├── images/ # Uploaded images go here<br>
+├── index.php # Main app logic<br>
+├── style.css # CSS styles<br>
+├── script.js # JS for image preview<br>
+├── delete-icon.svg # SVG delete icon (inlined via <svg>)<br>
+└── README.md # Project documentation<br>
 
 
 
