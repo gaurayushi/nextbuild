@@ -329,6 +329,106 @@ SoftShell is a visually sleek and minimalistic Web3 UI built with **React 19**, 
 
 
 
+# 📷 PhotoAlbum — Simple PHP Image Gallery with Upload & Pagination
+
+**PhotoAlbum** is a modern, minimal photo album web application built with **PHP**, **HTML/CSS**, and **JavaScript**. It allows users to upload images in real time and view them in a clean layout — 3 images on the left and 3 on the right per page — with automatic pagination.
+
+> 🔗 Live Preview (optional): _Add your GitHub Pages or local link here_
+
+---
+
+## 🚀 Tech Stack
+
+- **PHP** – Backend handling for image upload/delete
+- **HTML5 & CSS3** – Clean, responsive layout
+- **JavaScript** – File preview before upload
+- **Vanilla JS** – Lightweight interactivity
+
+---
+
+## 📸 UI Preview
+
+| Upload Page | Paginated View |
+|-------------|----------------|
+| ![sp](https://github.com/user-attachments/assets/0325653e-2314-4134-8628-b9b0e9f74f18) | ![ss](https://github.com/user-attachments/assets/d61fd70e-6414-4279-8633-34c2ac2aafee) |
+| ![sss](https://github.com/user-attachments/assets/b6a46472-4ba5-42ac-8c5a-802300064141) | ![spa](https://github.com/user-attachments/assets/a9ab4914-bba2-459f-95ff-777742e2767a) |
+
+> 💡 Fully responsive and clean layout for desktop & mobile.
+
+---
+
+## 📂 Folder Structure
+PhotoAlbum/
+├── images/ # Uploaded images go here
+├── index.php # Main app logic
+├── style.css # CSS styles
+├── script.js # JS for image preview
+├── delete-icon.svg # SVG delete icon (inlined via <svg>)
+└── README.md # Project documentation
+
+
+
+
+
+---
+
+## 💻 How to Run the Project Locally
+
+### 1. 📦 Requirements
+
+- [XAMPP](https://www.apachefriends.org/index.html) or any PHP server
+- PHP 7.0+ enabled
+- Browser (Chrome, Firefox, Edge)
+
+---
+
+### 2. 🚀 Setup
+
+1. **Install XAMPP**
+   - Download and install from [https://www.apachefriends.org](https://www.apachefriends.org)
+   - Start Apache server from the XAMPP Control Panel
+
+2. **Project Setup**
+   - Place the project folder (`PhotoAlbum/`) inside `C:\xampp\htdocs\`
+
+3. **Start the App**
+   - Open your browser
+   - Visit: [http://localhost/PhotoAlbum](http://localhost/PhotoAlbum)
+
+---
+
+## 📤 Upload Images
+
+- Use the file input field to choose a `.jpg`, `.jpeg`, or `.png` image
+- After submission:
+  - The image is uploaded in real-time to the `images/` folder
+  - Preview and confirmation appear immediately
+
+> Max file size supported: **5MB**
+
+---
+
+## 🗑️ Delete Images
+
+- Hover over any image to reveal the delete button (trash icon)
+- Clicking it will prompt confirmation and delete the image from the server
+
+---
+
+## 📄 Features
+
+- ✅ Real-time image upload preview
+- ✅ Pagination: 6 images per page (3 left, 3 right)
+- ✅ Responsive layout for vertical and horizontal images
+- ✅ Safe upload (file type + size validation)
+- ✅ Image deletion with confirmation
+
+---
+
+
+
+
+
 
 
 
